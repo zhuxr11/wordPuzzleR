@@ -31,6 +31,9 @@ reveal themselves. If all letters are revealed before your guesses run out,
 you win this round, otherwise you fail.
 }
 \examples{
+\dontrun{
+
 # Run word puzzle game
 run_game()
+}
 }

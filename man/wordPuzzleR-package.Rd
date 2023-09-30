@@ -9,8 +9,11 @@
 The word puzzle game requires you to find out the letters in a word within a limited number of guesses. In each round, if your guess hit any letters in the word, they reveal themselves. If all letters are revealed before your guesses run out, you win this game; otherwise you fail. You may run multiple games to guess different words.
 }
 \examples{
+\dontrun{
+
 # Run word puzzle game
 run_game()
+}
 }
 \author{
 \strong{Maintainer}: Xiurui Zhu \email{zxr6@163.com}
