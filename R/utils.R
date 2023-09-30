@@ -8,6 +8,8 @@ NULL
 #' \code{config_game} configures wordPuzzleR, or show current configuration
 #' when used with no arguments.
 #'
+#' @importFrom utils assignInMyNamespace
+#'
 #' @param ... Arguments passed on to configurations. Valid names may be:
 #' \describe{
 #'   \item{dict}{(String) path to dictionary file, where each line is a word.}
@@ -44,7 +46,7 @@ config_game <- function(..., .verbose = TRUE) {
   if (new_config[["guess"]] <= 0L) {
     stop("[guess] should be a positive integer")
   }
-  assignInMyNamespace(".wordPuzzleConfig", new_config)
+  utils::assignInMyNamespace(".wordPuzzleConfig", new_config)
   if (.verbose == TRUE) {
     message("wordPuzzleR config:")
     purrr::iwalk(

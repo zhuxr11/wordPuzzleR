@@ -15,6 +15,7 @@ NULL
 .dict <- c()
 
 #' Prepare dictionary
+#' @importFrom utils assignInMyNamespace
 #' @noRd
 prep_dict <- function(config, verbose = TRUE) {
   .core_fun <- function(dict_path, min_len = 3L, max_len = 8L, pattern = "[A-Za-z]+", guess = 10L) {
@@ -31,14 +32,16 @@ prep_dict <- function(config, verbose = TRUE) {
     }
     dict
   }
-  assignInMyNamespace(".dict", do.call(.core_fun, config))
+  utils::assignInMyNamespace(".dict", do.call(.core_fun, config))
 }
 
+#' @importFrom utils assignInMyNamespace
+#' @noRd
 .onLoad <- function(...) {
   args_list <- list(...)
-  assignInMyNamespace(".PKG_NAME", args_list[[2L]])
+  utils::assignInMyNamespace(".PKG_NAME", args_list[[2L]])
   init_config <- .wordPuzzleConfig
   init_config[["dict"]] <- system.file(file.path("resources", "dict.txt"), package = .PKG_NAME)
-  assignInMyNamespace(".wordPuzzleConfig", init_config)
+  utils::assignInMyNamespace(".wordPuzzleConfig", init_config)
   prep_dict(config = .wordPuzzleConfig, verbose = FALSE)
 }
