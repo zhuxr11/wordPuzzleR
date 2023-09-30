@@ -1,0 +1,97 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# wordPuzzleR
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/wordPuzzleR)](https://CRAN.R-project.org/package=wordPuzzleR)
+[![R-CMD-check](https://github.com/zhuxr11/wordPuzzleR/workflows/R-CMD-check/badge.svg)](https://github.com/zhuxr11/wordPuzzleR/actions)
+[![Download stats](https://cranlogs.r-pkg.org/badges/grand-total/wordPuzzleR)](https://CRAN.R-project.org/package=wordPuzzleR)
+<!-- badges: end -->
+
+**Package**: [*wordPuzzleR*](https://github.com/zhuxr11/wordPuzzleR) `r pkgload::pkg_version()`<br />
+**Author**: Xiurui Zhu<br />
+**Modified**: `r file.info("README.Rmd")$mtime`<br />
+**Compiled**: `r Sys.time()`
+
+**Let's have fun with R!** In this word puzzle game, you are required to find out the letters in a word within a limited number of guesses. In each round, if your guess hit any letters in the word, they reveal themselves. If all letters are revealed before your guesses run out, you win this game; otherwise you fail. You may run multiple games to guess different words.
+
+## Installation
+
+You can install the released version of `wordPuzzleR` from [CRAN](https://cran.r-project.org/) with:
+
+``` r
+install.packages("wordPuzzleR")
+```
+
+Alternatively, you can install the developmental version of `wordPuzzleR` from [github](https://github.com/) with:
+
+``` r
+remotes::install_github("zhuxr11/wordPuzzleR")
+```
+
+## Running word puzzle game
+
+First, load the package with `library()` in R.
+
+```{r library, eval=FALSE}
+library(wordPuzzleR)
+```
+
+```{r, include=FALSE}
+pkgload::load_all()
+```
+
+Then, you may start the word puzzle game with `run_game()`.
+
+```{r start-game-default, eval=FALSE}
+run_game()
+```
+
+```{r, echo=FALSE}
+set.seed(1234L)
+run_game(.auto = TRUE)
+```
+
+Alternatively, you can use a different mask letter by specifying `mask_char`.
+
+```{r start-game-custom-mask, eval=FALSE}
+run_game(mask_char = "*")
+```
+
+```{r, echo=FALSE}
+set.seed(2345L)
+run_game(mask_char = "*", .auto = TRUE, .letters = c("c", "r", "e", "d", "i", "t"))
+```
+
+## Configuring word puzzle game
+
+The word puzzle game can be configured with `config_game()`.
+
+```{r}
+config_game(
+  # Set dictionary path
+  dict = system.file(file.path("resources", "dict.txt"), package = "wordPuzzleR"),
+  # Set word lengths (min/max)
+  min_len = 3L,
+  max_len = 8L,
+  # Set maximal guesses
+  guess = 10L,
+  # Set word pattern (regular expression)
+  pattern = "[A-Za-z]+"
+)
+```
+
