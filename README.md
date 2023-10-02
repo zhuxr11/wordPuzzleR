@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wordPuzzleR
+# Word Puzzle Game in R
 
 <!-- badges: start -->
 
@@ -15,8 +15,8 @@ stats](https://cranlogs.r-pkg.org/badges/grand-total/wordPuzzleR)](https://CRAN.
 <!-- badges: end -->
 
 **Package**: [*wordPuzzleR*](https://github.com/zhuxr11/wordPuzzleR)
-0.1.0<br /> **Author**: Xiurui Zhu<br /> **Modified**: 2023-09-30
-14:02:34<br /> **Compiled**: 2023-09-30 14:02:46
+0.1.0<br /> **Author**: Xiurui Zhu<br /> **Modified**: 2023-10-02
+10:04:07<br /> **Compiled**: 2023-10-02 10:04:13
 
 **Let’s have fun with R!** In this word puzzle game, you are required to
 find out the letters in a word within a limited number of guesses. In

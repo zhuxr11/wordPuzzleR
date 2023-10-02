@@ -1,5 +1,5 @@
 Package: wordPuzzleR
-Title: Word Puzzle Game in R
+Title: Word Puzzle Game
 Version: 0.1.0
 Authors@R: 
     person("Xiurui", "Zhu", , "zxr6@163.com", role = c("aut", "cre"),
