@@ -25,10 +25,9 @@ NULL
 #' @export
 #'
 #' @examples
-#' \dontrun{
-#'
 #' # Run word puzzle game
-#' run_game()
+#' if (interactive() == TRUE) {
+#'   run_game()
 #' }
 run_game <- function(mask_char = "_", verbose = TRUE, ...) {
   stopifnot(nchar(mask_char) == 1L)

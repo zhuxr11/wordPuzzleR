@@ -1,8 +1,7 @@
 #' @examples
-#' \dontrun{
-#'
 #' # Run word puzzle game
-#' run_game()
+#' if (interactive() == TRUE) {
+#'   run_game()
 #' }
 #' @keywords internal
 "_PACKAGE"
