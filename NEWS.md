@@ -6,7 +6,9 @@
 
 ## Enhancements
 
-* Added a `NEWS.md` file to track changes to the package.
+* Add `NEWS.md` to track changes to the package.
+
+* Add `URL` and `BugReports` fields to `DESCRIPTION` (contributed by [`@olivory`](olivroy@fosstodon.org) through pull request).
 
 
 # wordPuzzleR 0.1.0
