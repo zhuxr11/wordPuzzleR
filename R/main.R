@@ -46,9 +46,8 @@ run_game <- function(mask_char = "_", verbose = TRUE, ...) {
         best_guess <- round_res[["iter"]]
       }
       total_unique_letters <- length(unique(split_word(round_res[["word"]])))
-      cur_hit_rate_value <-
       if ((is.na(best_hit_rate) == TRUE) ||
-          (round_res[["iter"]] / total_unique_letters > best_hit_rate)) {
+          (total_unique_letters / round_res[["iter"]] > best_hit_rate)) {
         best_hit <- c(hit = total_unique_letters, guess = round_res[["iter"]])
         best_hit_rate <- best_hit[["hit"]] / best_hit[["guess"]]
       }
