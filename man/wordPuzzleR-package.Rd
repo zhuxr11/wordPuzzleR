@@ -14,8 +14,21 @@ if (interactive() == TRUE) {
   run_game()
 }
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/zhuxr11/wordPuzzleR}
+  \item Report bugs at \url{https://github.com/zhuxr11/wordPuzzleR/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Xiurui Zhu \email{zxr6@163.com}
+
+Other contributors:
+\itemize{
+  \item @olivory \email{olivroy@fosstodon.org} (Add `URL` and `BugReports` fields to `DESCRIPTION`.) [contributor]
+}
 
 }
 \keyword{internal}
