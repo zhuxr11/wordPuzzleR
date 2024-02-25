@@ -8,7 +8,7 @@
 
 * Add `NEWS.md` to track changes to the package.
 
-* Add `URL` and `BugReports` fields to `DESCRIPTION` (contributed by [`@olivory`](olivroy@fosstodon.org) through pull request).
+* Add `URL` and `BugReports` fields to `DESCRIPTION` (contributed by `@olivory` through pull request).
 
 
 # wordPuzzleR 0.1.0

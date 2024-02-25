@@ -1,3 +1,8 @@
+## Resubmission of wordPuzzleR 0.1.1
+
+* Remove contributor's e-mail URL from `NEWS.md`.
+
+
 ## Resubmission of wordPuzzleR 0.1.0
 
 * Remove redundant "in R" from package title.
