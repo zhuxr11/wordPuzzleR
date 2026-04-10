@@ -15,8 +15,8 @@ stats](https://cranlogs.r-pkg.org/badges/grand-total/wordPuzzleR)](https://CRAN.
 <!-- badges: end -->
 
 **Package**: [*wordPuzzleR*](https://github.com/zhuxr11/wordPuzzleR)
-0.1.1<br /> **Author**: Xiurui Zhu<br /> **Modified**: 2023-10-02
-10:04:07<br /> **Compiled**: 2024-02-24 18:42:29
+0.1.2<br /> **Author**: Xiurui Zhu<br /> **Modified**: 2026-04-10
+13:56:15<br /> **Compiled**: 2026-04-10 14:10:59
 
 **Let’s have fun with R!** In this word puzzle game, you are required to
 find out the letters in a word within a limited number of guesses. In
@@ -157,7 +157,7 @@ config_game(
   pattern = "[A-Za-z]+"
 )
 #> wordPuzzleR config:
-#> * dict: F:/Projects/Packages/wordPuzzleR/inst/resources/dict.txt
+#> * dict: E:/R/Packages/wordPuzzleR/inst/resources/dict.txt
 #> * min_len: 3
 #> * max_len: 8
 #> * guess: 10
