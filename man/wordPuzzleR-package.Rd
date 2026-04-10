@@ -27,7 +27,7 @@ Useful links:
 
 Other contributors:
 \itemize{
-  \item @olivory \email{olivroy@fosstodon.org} (Add `URL` and `BugReports` fields to `DESCRIPTION`.) [contributor]
+  \item @olivroy \email{olivroy@fosstodon.org} (Add `URL` and `BugReports` fields to `DESCRIPTION`.) [contributor]
 }
 
 }

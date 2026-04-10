@@ -1,3 +1,10 @@
+# wordPuzzleR 0.1.2
+
+## Bug fixes
+
+* Fix a typo in author name `olivroy`.
+
+
 # wordPuzzleR 0.1.1
 
 ## Bug fixes
@@ -8,7 +15,7 @@
 
 * Add `NEWS.md` to track changes to the package.
 
-* Add `URL` and `BugReports` fields to `DESCRIPTION` (contributed by `@olivory` through pull request).
+* Add `URL` and `BugReports` fields to `DESCRIPTION` (contributed by `@olivroy` through pull request).
 
 
 # wordPuzzleR 0.1.0
